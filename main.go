@@ -16,7 +16,7 @@ var people []Person
 
 func main() {
 	http.HandleFunc("/people", peopleHandler)
-	http.HandleFunc("/healt", healthCheckHandler)
+	http.HandleFunc("/health", healthCheckHandler)
 
 	log.Println("server start listening on port 8080")
 	err := http.ListenAndServe("localhost:8080", nil)
